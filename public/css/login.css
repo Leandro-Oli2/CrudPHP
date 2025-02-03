@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav {
+    background-color: #AB2120;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    background-image: url('../../public/assets/img/bbbb.avif'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box {
+    background-color: #593E38;
+    padding: 30px 50px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button {
+    margin-top: 10px;
+    background-color: #AE4A34; 
+    color: #ffffff; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 107%;
+}
+
+.submit-button:hover {
+    background-color: #332B29; 
+}
+
+.signup-link {
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #ffffff; 
+}
+
+.signup-link a {
+    color: #ff8800; 
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.admin-link a,
+.client-link a {
+    color: #ff8800; 
+    text-decoration: none; 
+}
+
+.admin-link a:hover,
+.client-link a:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+}
+
+.footer-section {
+    background-color: #AB2120;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

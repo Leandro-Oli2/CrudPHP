@@ -1,0 +1,147 @@
+/* Estilo geral */
+body {
+    background-image: url('../assets/img/pngtree-cartoon-red-panda-with-fries-and-burger-on-orange-background-image_13371574.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Estilo da barra de navegação */
+.top-navigation {
+    background-color: #3a3a3a;
+    padding: 10px 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    display: flex;
+    align-items: center;
+}
+
+.back-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.back-button i {
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.brand-logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+/* Estilo do cabeçalho do menu */
+.menu-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-header h1 {
+    margin: 0;
+}
+
+/* Estilo da seção do menu */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo dos itens do menu */
+.menu-item {
+    background-color: #F2B36D;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+}
+
+.item-description {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: black;
+}
+
+.item-price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn-add {
+    background-color: #ff5722;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #e64a19;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3a3a;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
