@@ -2,7 +2,9 @@
 require __DIR__.'/../../DB/Database.php'; // Ajuste o caminho conforme necessário
 
 // Inicie a sessão
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // // Verifique se o usuário está logado e é um administrador
 // if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {

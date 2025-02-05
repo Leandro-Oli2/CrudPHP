@@ -38,7 +38,7 @@ session_start();
                     <li><a href="app/user/controllers/logout.php">Logout</a></li>
                 <?php else: ?>
                     
-                    <li><a href="app/user/views/login.php">Login</a></li>
+                    <li><a href="app/user/views/Login.php">Login</a></li>
                 <?php endif; ?>
             </ul>
             <div class="social-icons">

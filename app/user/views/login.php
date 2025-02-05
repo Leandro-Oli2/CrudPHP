@@ -1,21 +1,46 @@
 <?php
-class Login{
-    public static function islogged(){
-        return false;
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+require __DIR__.'/../../DB/Database.php';
+
+class Login {
+    public static function login($username, $senha){
+        $db = new Database('usuarios');
+        
+        // Alterando para usar o 'nome' em vez de 'email'
+        $query = "SELECT id, nome, email, senha, is_admin FROM usuarios WHERE nome = ?";
+        
+        // Corrigindo o erro na chamada do execute
+        $stmt = $db->execute($query, [$username]);
+        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($usuario && password_verify($senha, $usuario['senha'])) {
+            $_SESSION['usuario_id'] = $usuario['id'];
+            $_SESSION['usuario_nome'] = $usuario['nome'];
+            $_SESSION['usuario_email'] = $usuario['email'];
+            $_SESSION['is_admin'] = $usuario['is_admin'];
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public static function requireLogin(){
-        if(!self::islogged()){
-            header('location: login.php');
+    public static function islogged() {
+        return isset($_SESSION['usuario_id']);
+    }
+
+    public static function requireLogin() {
+        if (!self::islogged()) {
+            header('Location: login.php'); // Corrigir o caminho do arquivo de login
             exit;
         }
     }
 
-    public static function requireLogout(){
-        if(self::islogged()){
-            header('location: index.php');
-            exit;
-        }
+    public static function requireLogout() {
+        session_destroy();
+        header('Location: login.php'); // Certifique-se de que o caminho está correto
+        exit;
     }
 }
 ?>

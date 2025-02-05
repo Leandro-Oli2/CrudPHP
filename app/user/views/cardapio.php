@@ -1,7 +1,3 @@
-<?php
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +19,7 @@
             <ul class="nav-links">
                 <li><a href="reserva.php">Reservas</a></li>
                 <li><a href="cardapio.php">Cardápio</a></li>
-                <li><a href="login.php">Login</a></li>
+                <li><a href="Login.php">Login</a></li>
             </ul>
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank">

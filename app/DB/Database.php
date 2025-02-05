@@ -1,11 +1,11 @@
 <?php
 
 class Database{
-    private $conn;
-    public string $local = "localhost";
+    public $conn;
+    public string $local = "10.38.0.126";
     public string $db = "crudphp";
-    public string $user = "root";
-    public string $passwords = "Oliveira@87185";
+    public string $user = "devweb";
+    public string $passwords = "suporte@22";
     public $table;
     
 
@@ -77,5 +77,4 @@ class Database{
     }
     
 }
-
 ?>

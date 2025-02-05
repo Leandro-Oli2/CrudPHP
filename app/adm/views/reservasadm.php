@@ -2,11 +2,13 @@
 require __DIR__.'/../../DB/Database.php'; 
 
 
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 
 if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
-    header('Location: ../login.php');
+    header('Location: ../Login.php');
     exit();
 }
 

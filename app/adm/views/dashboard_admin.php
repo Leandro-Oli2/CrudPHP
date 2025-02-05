@@ -1,7 +1,9 @@
 <?php
-    session_start();
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
     if ($_SESSION['is_admin'] != 1) {
-        header('Location: ../login.php');
+        header('Location: /CRUDPHP/app/user/views/Login.php');
         exit();
     }
 ?>

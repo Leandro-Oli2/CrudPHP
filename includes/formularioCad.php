@@ -44,7 +44,7 @@
                 </div>
                 <button type="submit" class="submit-button">Registrar</button>
             </form>
-            <p class="login-link">Já tem uma conta? <a href="../views/login.php">Entrar</a></p>
+            <p class="login-link">Já tem uma conta? <a href="../views/Login.php">Entrar</a></p>
         </div>
     </main>
 

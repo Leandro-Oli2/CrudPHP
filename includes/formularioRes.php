@@ -1,3 +1,12 @@
+<?php
+
+if(isset($_SESSION['usuario_id'])){
+    echo 'logado com sucesso';
+}else{
+    header('location: ../views/Login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
